@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.bg{
+    background: url(57089.jpg) no-repeat center center/cover;
+    position: absolute;
+    top:-30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(170vh + 60px);
+    z-index: -1;
+    filter: blur(30px);
+}
+.loading-text {
+    font-size: 50px;
+    color: aliceblue;
+    
+}
+.them {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 30vh;
+}
+.box {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 50vh;
+}
+.circle {
+    margin: 220px;
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 150px;
+    width: 150px;
+    background-color: slateblue;
+    border-radius: 100px;
+    transition: cubic-bezier(0.075, 0.02, 0.165, 1) 4s;
+    
+}
+.hover{
+    transform: scale(2);
+}
+#info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#info div{
+    padding: 3rem ;
+    margin: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background: rgb(9,60,227);
+    text-align: center
+    
+}
+.emoji {
+    font-size: 10vh;
+    cursor: pointer;
+    user-select: none; 
+}
+.happy {
+    display: none;
+}
+.unhappy {
+    display: none;
+}
+.shock {
+    display: none;
+}
+.active {
+    display: block;
+}
